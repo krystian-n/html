@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+    <title>VADEMECUM HTML</title>
+</head>
+<body>
+<h2><center><a href="index.html">Vademecum HTML</a></h2></center>
+
+
+
+<center><table border="3" width="700">
+    <tr><td width="350"><a href="dok.html">Dokument i Head</a></td>      <td><a href="bod.html">Body i odsyłacze</a></td>  </tr>
+    <tr><td width="350"><a href="txt.html">Tekst i Formatowanie</a></td> <td><a href="mul.html">Multimedia</a></td>  </tr>
+    <tr><td width="350"><a href="tab.html">Tabele</a></td>               <td><a href="ram.html">Ramki</a></td></tr>
+    <tr><td width="350"><a href="for.html">Formularze</a></td>           <td><a href="spe.html">Znaki specjalne i kolory</a></td>  </tr>
+</table></center><br/><br/>
+
+&lt;!-- Treść komentarza --&gt;<br/>
+&#38;nbsp; <b>Niełamliwa spacja</b><br/>
+&lt;b&gt;<b>tekst wytluszczony-BOLD</b>&lt;/b&gt;</br>
+&lt;i&gt;<i>Tekst pochylonu</i>&lt;/i&gt;<br/>
+&lt;u&gt;<u>Tekst podkreślony</u>&lt;/u&gt;<br/>
+&lt;s&gt;<s>Tekst przekreslony</s>&lt;/s&gt;<br/>
+&lt;blink&gt;<blink>Tekst migający</blink>&lt;/blink&gt;<br/>
+&lt;em&gt;<em>Tekst wyrózniony</em>&lt;/em&gt;<br/>
+&lt;sub&gt;<sub>index dolny</sub>&lt;/sub&gt;<br/>
+&lt;sup&gt;<sup>index gorny</sup>&lt;/sup&gt;<br/>
+&lt;pre&gt;<pre>tekst o stałej szerokości znaku</pre>&lt;/pre&gt;<br/>
+&lt;strong&gt;<strong>Tekst wyróżniony</strong>&lt;/strong&gt;<br/>
+&lt;kbd&gt;<kbd>Tekst z klawiatury</kbd>&lt;/kbd&gt;<br/>
+&lt;nobr&gt;<b>zablokowanie łamania linni pomiedzy stosujemy &lt;wbr/&gt;</b>&lt;/nobr&gt;<br/>
+&lt;br /&gt; <b>Następna linia</b><br/><br/>
+&lt;cite&gt;<cite>Albert Einstein</cite>&lt;/cite&gt; powiedział:<br/>
+&lt;q&gt;<q>Dwie rzeczy nie mają granic: wszechświat i ludzka głupota.</q>&lt;/q&gt;<br/>
+&lt;blockquote&gt;Blok cytatowy&lt;/blockquote&gt;<br/>
+
+<br/>
+
+<h3>Czcionka:</h3>
+
+&lt;basefont size="rozmiar" color="kolor" face="rodzaj" /&gt;<br/>
+&lt;font size="x"&gt;x od 1-7; 1-najmniejsza 7-najwieksza&lt;/font&gt;<br/>
+&lt;font color="red"&gt;<font color="red">Wiecej o kolorach w zakladce znaki specjalne i kolory</font>&lt;/font&gt;<br/>
+&lt;font face="arial"&gt;<font face="arial">wpisujemy nazwe czcionki </font>&lt;/font&gt;<br/><br/>
+
+
+<h3>Akapit</h3>
+&lt;p&gt;Zawartość akapitu&lt;/p&gt;<br/>
+Znaczkik akapit obsługuje atrybuty m.in.
+&lt;p align="left, right,center, justify"&gt;Zawartość akapitu&lt;/p&gt;<br/><br/>
+
+
+<hr></hr>
+
+&lt;p align="center"&gt; &lt;font face="arial" color="red" size="3" &gt;&lt;u&gt;
+<p align="center" ><font face="arial" color="red" size="3"><u>
+    parametry można lączyć</p></font></u>&lt;/u&gt;&lt;/font&gt;&lt;/p&gt;<br/><br/><hr></hr>
+
+
+<h3>Tytuł:</h3>
+&lt;hn align="left, right, center, justify title="tytuł wyświetlany podczas najechania""&gt; <b>Nagłówek n 0d 1 do 6</b> &lt;/hn&gt;
+<h4 title="przykład">Przykład najedz myszka na mnie</h4><br/>
+
+
+<h3>Blok:</h3>
+&lt;div align="center, left, right, justify"&gt; <b>BLOK..</b>&lt;div&gt;<br/><br/>
+
+<h2>Słownik </h2>
+<dl>&lt;dl&gt;</dl>
+<dt>&lt;dt&gt;Zamek&lt;/dt&gt;<dt>
+<dd>&lt;dd&gt;Urządzenie do zamykania drzwi za pomocą klucza.&lt;/dd&gt;</dd>
+<dt>&lt;dt&gt;Zapięcie wszywane do odzieży.&lt;/dt&gt;</dt>
+<dd>&lt;dd&gt;Warowna budowla mieszkalna.&lt;/dd&gt;</dd>
+<dt>&lt;dt&gt;Auto<&lt;/dt&gt;</dt>
+<dt>&lt;dt&gt;Samochód<&lt;/dt&gt;</dt>
+<dd>&lt;dd&gt;Dwuśladowy pojazd mechaniczny napędzany silnikiem.&lt;/dd&gt;</dd>
+<dl>&lt;/dl&gt;</dl><br/>
+
+<h2>Wykaz</h2>
+    <ul type="square">&lt;ul type="rodzaj"&gt;
+    <li>&lt;li&gt;Punkt pierwszy&lt;/li&gt;</li>
+    <li>&lt;li&gt;Punkt drugi&lt;/li&gt;</li>
+    <li>&lt;li&gt;Punkt trzeci&lt;/li&gt;</li>
+    &lt;/ul&gt;</ul>
+gdzie jako "rodzaj" należy podać:
+"disc" - (domyślny) - koło
+"circle" - okrąg
+"square" - wypełniony kwadrat<br/>
+<ol type="1">&lt;ol type="rodzaj"&gt;
+    <li>&lt;li&gt;Punkt pierwszy&lt;/li&gt;</li>
+    <li>&lt;li&gt;Punkt drugi&lt;/li&gt;</li>
+    <li>&lt;li&gt;Punkt trzeci&lt;/li&gt;</li>
+    &lt;/ol&gt;</ol>
+gdzie jako "rodzaj numeracji" należy podać:
+"1" (domyślny) - numeracja według liczb arabskich
+"I" - według dużych liczb rzymskich
+"i" - według małych liczb rzymskich
+"a" - według małych liter
+"A" - według dużych liter<br/>
+&lt;ol start="liczba"&gt;od jakiej zaczynamy numeracje&lt;<br/>
+<p><b>wykazy mozna zagniezdzać</b></p><br/>
+
+
+<h2>Pozioma linia</h2>
+&lt;hr /&gt;<hr/>
+
+&lt;hr noshade="noshade" /&gt; Pozbawiona cienia<br/>
+Może przybierać atrybuty:<br/>
+&lt;hr size="n" width="x" lub width="x%" color="red" align="left" / &gt;
+<hr noshade="noshade"  size="2" width="500" align="center" />
+<center>&lt;hr noshade="noshade"  size="2" width="500" align="center" /&gt;</center><br/>
+
+<h2>Obramownie</h2>
+
+&lt;fieldset&gt;<br/>
+&lt;legend&gt;Opis&lt;/legend&gt;<br/>
+Jakiś tekst<br/>
+<&lt;/fieldset&gt;><br/>
+
+<fieldset>
+    <legend>Opis tabeli</legend>
+    zawartośc tabelki
+</fieldset>
+</body>
+</html>

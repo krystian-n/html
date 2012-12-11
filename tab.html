@@ -1,0 +1,547 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+    <title>VADEMECUM HTML</title>
+</head>
+<body>
+<h2><center><a href="index.html">Vademecum HTML</a></h2></center>
+
+
+
+<center><table border="3" width="700">
+    <tr><td width="350"><a href="dok.html">Dokument i Head</a></td>      <td><a href="bod.html">Body i odsyłacze</a></td>  </tr>
+    <tr><td width="350"><a href="txt.html">Tekst i Formatowanie</a></td> <td><a href="mul.html">Multimedia</a></td>  </tr>
+    <tr><td width="350"><a href="tab.html">Tabele</a></td>               <td><a href="ram.html">Ramki</a></td></tr>
+    <tr><td width="350"><a href="for.html">Formularze</a></td>           <td><a href="spe.html">Znaki specjalne i kolory</a></td>  </tr>
+</table></center>
+
+<h2>Struktura:</h2>
+
+&lt;table&gt;<br/>
+&lt;tr&gt;<br/>
+&lt;td&gt;...&lt;/td&gt;	&lt;td&gt;...&lt;/td&gt;<br/>
+&lt;/tr&gt;<br/>
+&lt;tr&gt;<br/>
+&lt;td&gt;...&lt;/td&gt;	&lt;td&gt;...&lt;/td&gt;<br/>
+&lt;/tr&gt;<br/>
+&lt;/table&gt;<br/><br/>
+
+&lt;table&gt;...&lt;/table&gt;Znaczkik tabeli<br/>
+
+&lt;tr&gt;...&lt;/tr&gt;Znacznik wiersza<br/>
+
+&lt;td&gt;...&lt;/td&gt;Znaczkik komurki<br/><br/>
+
+
+<b>Tabele można w sobie zagnieżdżać!</b><br/><br/>
+
+<!--&lt;thead&gt;nagłówek&lt;/thead&gt;, &lt;tfoot&gt;Stopka&lt;/tfoot&gt;<br> -->
+
+
+<h3>Atrybuty Tabeli:</h3>
+
+
+
+<b>Obramowanie:</b><br/>
+<table border="3" >
+<tr><td width="400">
+&lt;table border="z"&gt;...&lt;/table&gt;<br/>
+ "z"  grubość zewnętrznej ramki tabeli (w pikselach).<br/><br/>
+    </td>
+<td width="400">
+
+    <table border="5" align="center">
+        <tr>
+            <td>komórka1</td>	<td>komórka2</td>
+        </tr>
+        <tr>
+            <td>komórka3</td>	<td>komórka4</td>
+        </tr>
+    </table>
+</td>
+</tr>
+</table>
+<br/><br/>
+
+
+
+<b>Marginesy w komórkach:</b><br/>
+<table border="3">
+<tr>
+    <td width="400">
+    &lt;table border="1" cellpadding="x"&gt;...&lt;/table&gt;<br/>
+gdzie "x" oznacza szerokość marginesu (w pikselach).<br/><br/>
+</td>
+<td width="400">
+    <table border="5" align="center" cellpadding="9">
+        <tr>
+            <td>komórka1</td>	<td>komórka2</td>
+        </tr>
+        <tr>
+            <td>komórka3</td>	<td>komórka4</td>
+        </tr>
+    </table>
+</td>
+</tr>
+</table>
+<br/><br/>
+
+
+<b>Odstępy między komórkami:</b><br/>
+<table border="3">
+    <tr>
+        <td width="400">
+            &lt;table border="1" cellspacing="x"&gt;...&lt;/table&gt;<br/>
+            gdzie "x" szerokość odstępu między sąsiednimi komórkami (w pikselach).<br/><br/>
+        </td>
+        <td width="400">
+            <table border="5" align="center" cellspacing="9">
+                <tr>
+                    <td>komórka1</td>	<td>komórka2</td>
+                </tr>
+                <tr>
+                    <td>komórka3</td>	<td>komórka4</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<br/><br/>
+
+
+
+
+
+<b>Nagłówek poziomy:</b> <br/>
+<table border="3">
+<tr><td width="400" >
+    &lt;table&gt;<br/>
+&lt;tr&gt;<br/>
+&lt;th&gt;...&lt;/th&gt;	&lt;th&gt;...&lt;/th&gt;<br/>
+&lt;/tr&gt;<br/>
+&lt;tr&gt;<br/>
+&lt;td&gt;...&lt;/td&gt;	&lt;td&gt;...&lt;/td&gt;<br/>
+&lt;/tr&gt;<br/>
+&lt;tr&gt;<br/>
+&lt;td&gt;...&lt;/td&gt;	&lt;td&gt;...&lt;/td&gt;<br/>
+&lt;/tr&gt;<br/>
+&lt;/table&gt;<br/><br/>
+</td>
+<td align="center" width="400">
+    <table border="2" >
+        <tr>
+            <th>tytuł kolumny</th>	<th>2 tytuł kolumny</th>
+        </tr>
+        <tr>
+            <td>...</td>	<td>...</td>
+        </tr>
+        <tr>
+            <td>...</td>	<td>...</td>
+        </tr>
+    </table>
+</td>
+</tr>
+</table><br/><br/>
+
+
+
+
+<b>Nagłówek pionowy</b><br/> <br/>
+
+<table border="3">
+    <tr><td width="400" >
+        &lt;table&gt;<br/>
+        &lt;tr&gt;<br/>
+        &lt;th&gt;...&lt;/th&gt;	&lt;td&gt;...&lt;/td&gt;	&lt;td&gt;...&lt;/td&gt;<br/>
+        &lt;/tr&gt;<br/>
+        &lt;tr&gt;<br/>
+        &lt;th&gt;...&lt;/th&gt;	&lt;td&gt;...&lt;/td&gt;	&lt;td&gt;...&lt;/td&gt;<br/>
+        &lt;/tr&gt;<br/>
+        &lt;/table&gt;<br/><br/>
+    </td>
+        <td align="center" width="400">
+            <table border="2">
+                <tr>
+                    <th> tytuł wiersza</th>
+
+
+                    <td>...</td>	<td>...</td>
+                </tr>
+                <tr>
+                    <th> 2 tytuł wiersza</th>
+                    <td>...</td>	<td>...</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table><br/><br/>
+
+
+<b>Nagłówek mieszany</b> <br/><br/>
+
+<table border="3">
+    <tr><td width="400" >
+        &lt;table&gt;<br/>
+        &lt;tr&gt;<br/>
+        &lt;th&gt;&lt;/th&gt;	&lt;th&gt;...&lt;/th&gt;	&lt;th&gt;...&lt;/th&gt;<br/>
+        &lt;/tr&gt;<br/>
+        &lt;tr&gt;<br/>
+        &lt;th&gt;...&lt;/th&gt;	&lt;td&gt;...&lt;/td&gt;	&lt;td&gt;...&lt;/td&gt;<br/>
+        &lt;/tr&gt;<br/>
+        &lt;tr&gt;<br/>
+        &lt;th&gt;...&lt;/th&gt;	&lt;td&gt;...&lt;/td&gt;	&lt;td&gt;...&lt;/td&gt;<br/>
+        &lt;/tr&gt;<br/>
+        &lt;/table&gt;<br/><br/>
+    </td>
+        <td align="center" width="400">
+            <table border="2">
+
+                    <tr>
+                        <th></th>	<th>Nazwa kolumny</th>	<th>2 nazwa kolumny</th>
+                    </tr>
+                    <tr>
+                        <th>nazwa Wiersza</th>	<td>...</td>	<td>...</td>
+                    </tr>
+                    <tr>
+                        <th>2 Nazwa wierssza</th>	<td>...</td>	<td>...</td>
+                    </tr>
+                </table>
+        </td>
+    </tr>
+</table><br/><br/>
+
+
+<b>Tytył komurki:</b><br/>
+
+<table border="3">
+<tr>
+<td width="400">  Dla każdego &lt;td&gt; mozemu umiescić atrybut &lt;td title"opis"&gt; bedzie on widoczny w dymku po najechaniu na komurke<br/><br/> </td>
+<td width="400">
+    <table border="2" align="center">
+        <tr>
+            <td>Kom 1</td> <td>kom 2</td>
+        </tr>
+        <tr>
+            <td title="kom 3">Najedz na te komv</td> <td title="kom 4">Najedz na te kom.</td>
+        </tr>
+    </table
+</td>
+</tr>
+</table><br/><br/>
+
+
+
+
+
+<b>Tytuł tabeli:</b><br/>
+<table border="3">
+<tr>
+<td width="400">
+    &lt;table&gt;<br/>
+    &lt;caption align="var"&gt;Tu podaj tytuł&lt;/caption&gt;<br/>
+    (...)<br/>
+    &lt;/table&gt;<br/>
+    gdzie jako "var" należy podać: <br/>
+    "top" - tytuł górny (domyślnie)<br/>
+    "bottom" - tytuł dolny<br/>
+    "left" - ustawienie przy lewej krawędzi tabeli<br/>
+    "right" - przy prawej krawędzi<br/>
+    "center" - na środku<br/><br/>
+</td>
+<td width="400">
+
+    <table border="3" align="center" width="300" >
+        <caption align="center">To jest tytuł</caption>
+        <tr>
+            <td>...</td> <td>...</td>
+        </tr>
+        <tr>
+            <td>...</td> <td>...</td>
+        </tr>
+    </table>
+</td>
+</tr>
+</table><br/><br/>
+
+
+<b>Wymiary:</b><br/><br/>
+
+
+
+ <b>Wymiary całej tabeli</b> <br/>
+&lt;table width="x" height="y"&gt;...&lt;/table&gt;<br/>
+lub<br/>
+&lt;table width="x%" height="y%"&gt;...&lt;/table&gt;<br/><br/>
+
+    <b>Wymiary pojedynczej komórki</b> <br/>
+&lt;table&gt;<br/>
+&lt;tr&gt;<br/>
+&lt;td width="x" height="y"&gt;...&lt;/td&gt;<br/>
+&lt;/tr&gt;<br/>
+&lt;/table&gt;<br/>
+lub <br/>
+&lt;table&gt;<br/>
+&lt;tr&gt;<br/>
+&lt;td width="x%" height="y%"&gt;...&lt;/td&gt;<br/>
+&lt;/tr&gt;<br/>
+&lt;/table&gt;<br/><br/>
+
+
+
+<b>Wyrównanie tabeli:</b><br/>
+&lt;table align="var"&gt;...&lt;/table&gt;<br/>
+gdzie  "var" moze być : <br/>
+"left" - wyrównanie tabeli do lewej strony (domyślnie), względem otaczającego tekstu<br/>
+"right" - wyrównanie tabeli do prawej strony, względem otaczającego tekstu<br/>
+"center" - wyśrodkowanie tabeli<br/><br/>
+
+
+
+
+<b>Wyrównanie zawartości tabeli:</b><br/><br/>
+
+<b>Wyrównanie zawartości całego wiersza:</b> <br/>
+&lt;table&gt;<br/>
+&lt;tr align="rodzaj" valign="ustawienie"&gt;...&lt;/tr&gt;<br/>
+&lt;/table&gt;<br/><br/>
+
+<b>Wyrównanie zawartości pojedynczej komórki:</b> <br/>
+&lt;table&gt;<br/>
+&lt;tr&gt;<br/>
+&lt;td align="rodzaj" valign="ustawienie"&gt;...&lt;/td&gt;<br/>
+&lt;/tr&gt;<br/>
+&lt;/table&gt;<br/><br/>
+
+<u>W obu przypadkach należy podać:</u> <br/>
+rodzaj<br/>
+"left" - wyrównanie zawartości (wiersza lub komórki) do lewej (domyślnie)<br/>
+"right" - wyrównanie zawartości do prawej<br/>
+"center" - wyśrodkowanie zawartości<br/>
+ustawienie<br/>
+"top" - ustawienie zawartości (wiersza lub komórki) na górze<br/>
+"bottom" - ustawienie zawartości na dole<br/>
+"middle" - ustawienie zawartości po środku (domyślnie)<br/><br/>
+
+
+
+<b>Kolor tła</b><br/><br/>
+
+<b>W całej tabeli:</b> <br/>
+&lt;table bgcolor="kolor"&gt;...&lt;/table&gt;<br/>
+
+<b>W jednym wierszu:</b> <br/>
+&lt;table&gt;<br/>
+&lt;tr bgcolor="kolor"&gt;...&lt;/tr&gt;<br/>
+&lt;/table&gt;<br/>
+
+<b>W pojedynczej komórce</b> <br/>
+&lt;table&gt;<br/>
+&lt;tr&gt;<br/>
+&lt;td bgcolor="kolor"&gt;...&lt;/td&gt;<br/>
+&lt;/tr&gt;<br/>
+&lt;/table&gt;<br/><br/>
+
+
+
+<b>Tło obrazkowe:</b><br/><br/>
+
+<b>W całej tabeli:</b> <br/>
+&lt;table background="ścieżka dostępu"&gt;...&lt;/table&gt;<br/><br/>
+
+<b>W pojedynczej komórce:</b> <br/>
+&lt;table&gt;<br/>
+&lt;tr&gt;<br/>
+&lt;td background="ścieżka dostępu"&gt;...&lt;/td&gt;<br/>
+&lt;/tr&gt;<br/>
+&lt;/table&gt;<br/>
+<br/>
+
+<b>Blokada zawijania tekstu</b><br/>
+&lt;table&gt;<br/>
+&lt;tr&gt;<br/>
+&lt;td nowrap="nowrap"&gt;...&lt;/td&gt;<br/>
+&lt;/tr&gt;<br/>
+&lt;/table&gt;<br/><br/>
+
+
+<b>Łączenie komórek:</b><br/><br/>
+<b>Poziome łączenie komórek:</b> <br/>
+
+<table border="3">
+<tr>
+<td width="400">
+    &lt;table border="1" align="center"&gt;<br>
+    &lt;tr&gt;<br>
+    &lt;td colspan="2"&gt;komórki1,2&lt;/td&gt;<br>
+    &lt;/tr&gt;<br>
+    &lt;tr&gt;<br>
+    &lt;td&gt;komórka3&lt;/td&gt;  &lt;td&gt;komórka4&lt;/td&gt;<br>
+    &lt;/tr&gt;<br>
+    &lt;/table&gt;<br><br>
+    gdzie "2" liczba komórek do połączenia w poziomie.<br/><br/>
+</td>
+<td width="400">
+    <table border="1" align="center">
+        <tr>
+            <td colspan="2">komórki1,2</td>
+        </tr>
+        <tr>
+            <td>komórka3</td>  <td>komórka4</td>
+        </tr>
+    </table>
+
+</td>
+</tr>
+    </table><br/><br/>
+
+
+
+
+
+
+
+
+<b>Pionowe łączenie komórek:</b> <br/>
+<table border="3">
+    <tr>
+        <td width="400">
+            &lt;table border="1" align="left"&gt;<br>
+            &lt;tr&gt;<br>
+            &lt;td rowspan="2"&gt;KolumnA1,3&lt;/td&gt;&lt;td&gt;Kolumna 2&lt;/td&gt;<br>
+            &lt;/tr&gt;<br>
+            &lt;tr&gt;<br>
+            &lt;td&gt;komórka4&lt;/td&gt;<br>
+            &lt;/tr&gt;<br>
+            &lt;/table&gt;<br>
+
+            &lt;/td&gt;<br>
+            &lt;/tr&gt;<br>
+            &lt;/table&gt;<br/><br/>
+            gdzie "2" liczba komórek do połączenia w poziomie.<br/>
+        </td>
+        <td width="400">
+            <table border="1" align="center">
+                <tr>
+                    <td rowspan="2">KolumnA1,3</td><td>Kolumna 2</td>
+                </tr>
+                <tr>
+                    <td>komórka4</td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+</table><br/><br/>
+
+
+<b>Łączenie wierszy w grupy:</b><br/>
+
+<table border="3">
+<tr>
+<td width="400">
+    &lt;table border="1" width="100%"&gt;<br/>
+    &lt;tbody align="center"&gt;<br/>
+    &lt;tr&gt;<br/>
+    &lt;td&gt;komórka1&lt;/td&gt;  &lt;td&gt;komórka2&lt;/td&gt;  &lt;td&gt;komórka3&lt;/td&gt;<br/>
+    &lt;/tr&gt;<br/>
+    &lt;tr&gt;<br/>
+    &lt;td&gt;komórka4&lt;/td&gt;  &lt;td&gt;komórka5&lt;/td&gt;  &lt;td&gt;komórka6&lt;/td&gt;<br/>
+    &lt;/tr&gt;<br/>
+    &lt;/tbody&gt;<br/>
+    &lt;tbody&gt;<br/>
+    &lt;tr&gt;<br/>
+    &lt;td&gt;komórka7&lt;/td&gt;  &lt;td&gt;komórka8&lt;/td&gt;  &lt;td&gt;komórka9&lt;/td&gt;<br/>
+    &lt;/tr&gt;<br/>
+    &lt;/tbody&gt;<br/>
+    &lt;/table&gt;<br/>
+
+    <u>Łączenie wierszy w grupy umożliwia później odnoszenie się do takiej grupy jako do całości.Dzięki temu możemy nadać od razu całej grupie:<br/>
+        Określony rodzaj formatowania - ustawienie tekstu w komórkach</u> <br/>
+    &lt;tbody align="rodzaj" valign="ustawienie"&gt;...&lt;/tbody&gt;<br/><br/>
+</td>
+<td width="400">
+
+    <table border="1" width="100%">
+        <tbody align="center">
+        <tr>
+            <td>komórka1</td>  <td>komórka2</td>  <td>komórka3</td>
+        </tr>
+        <tr>
+            <td>komórka4</td>  <td>komórka5</td>  <td>komórka6</td>
+        </tr>
+        </tbody>
+        <tbody>
+        <tr>
+            <td>komórka7</td>  <td>komórka8</td>  <td>komórka9</td>
+        </tr>
+        </tbody>
+    </table>
+
+</td>
+</tr>
+</table><br/><br/>
+
+
+
+
+
+<b>Łączenie kolumn w grupy</b><br/>
+
+<table border="3">
+   <tr>
+    <td width="400">
+        &lt;table border="1" style="width: 100%"&gt;<br/>
+        &lt;colgroup span="1" align="center" valign="bottom"&gt;&lt;/colgroup&gt;<br/>
+        &lt;tr&gt;<br/>
+        &lt;td height="50"&gt;komórka1&lt;/td&gt;  &lt;td&gt;komórka2&lt;/td&gt;  &lt;td&gt;komórka3&lt;/td&gt;<br/>
+        &lt;/tr&gt;<br/>
+        &lt;tr&gt;<br/>
+        &lt;td height="50"&gt;komórka4&lt;/td&gt;  &lt;td&gt;komórka5&lt;/td&gt;  &lt;td&gt;komórka6&lt;/td&gt;<br/>
+        &lt;/tr&gt;<br/>
+        &lt;/table&gt;<br/>
+    </td>
+   <td width="400">
+       <table border="1" style="width: 100%">
+           <colgroup span="1" align="center" valign="bottom"></colgroup>
+           <tr>
+               <td height="50">komórka1</td>  <td>komórka2</td>  <td>komórka3</td>
+           </tr>
+           <tr>
+               <td height="50">komórka4</td>  <td>komórka5</td>  <td>komórka6</td>
+           </tr>
+       </table>
+   </td>
+   </tr>
+</table><br/><br/>
+
+
+
+<b>Zewnętrzne krawędzie:</b><br/>
+&lt;table border="1" frame="typ"&gt;POZOSTAŁA ZAWARTOŚC TABELI &lt;/table&gt;<br/>
+<u>Typ:</u><br/>
+"void" - usuwa zewnętrzne obramowanie,<br/>
+"above" - tylko górna krawędź,<br/>
+"below" - tylko dolna krawędź,<br/>
+"lhs" - tylko lewa krawędź,<br/>
+"rhs" - tylko prawa krawędź,<br/>
+"hsides" - tylko poziome krawędzie,<br/>
+"vsides" - tylko pionowe krawędzie,<br/>
+"box" - wszystkie krawędzie zewnętrzne (domyślnie),<br/><br/>
+
+
+
+<b>Wewnętrzne krawędzie:</b><br/>
+&lt;table border="1" rules="typ"&gt;POZOSTAŁA ZAWARTOŚC TABELI  &lt;/table&gt;<br/>
+<u>typ:</u><br/>
+"none" - usuwa wszystkie wewnętrzne krawędzie,<br/>
+"rows" - tylko poziome krawędzie w środku tabeli,<br/>
+"cols" - tylko pionowe krawędzie w środku tabeli,<br/>
+"all" - wszystkie krawędzie wewnętrzne (domyślnie),<br/>
+
+
+
+
+</body>
+</html>

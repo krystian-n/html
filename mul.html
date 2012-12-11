@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+    <title>VADEMECUM HTML</title>
+</head>
+<body>
+<h2><center><a href="index.html">Vademecum HTML</a></h2></center>
+
+
+
+<center><table border="3" width="700">
+    <tr><td width="350"><a href="dok.html">Dokument i Head</a></td>      <td><a href="bod.html">Body i odsyłacze</a></td>  </tr>
+    <tr><td width="350"><a href="txt.html">Tekst i Formatowanie</a></td> <td><a href="mul.html">Multimedia</a></td>  </tr>
+    <tr><td width="350"><a href="tab.html">Tabele</a></td>               <td><a href="ram.html">Ramki</a></td></tr>
+    <tr><td width="350"><a href="for.html">Formularze</a></td>           <td><a href="spe.html">Znaki specjalne i kolory</a></td>  </tr>
+</table></center><br/><br/>
+
+&lt;img /&gt; znacznik ten nie posiada znaczkika zamykającego,   <b>stusujemy wzgłedne scieżki oraz / a nie \ </b><br/><br/>
+
+Znacznik img posiada atrybuty src="" alt="" align=""<br/>
+
+&lt;img src="ściezka do pliku jesli w tym samym kat. plik.gif  inna lokalizacja niżęj katalog/plik.gif wyżej ../plik.gif"
+alt="tekst alternatywny w przypadkuvnie wczytania obrazka" align="right" /&gt;<br/><br/>
+
+Srodkowanie obrazka &lt;center&gt;&lt;img wraz z atrybutami nie dotyczy align /&gt;&lt;/center&gt;<br/><br/>
+
+&lt;bgsound src="ścieżka dostępu do pliku dźwiękowego" /&gt; Działa tylko z IE i Opera;
+
+<h2>Osadzanie Pliku</h2>
+
+
+&lt;embed src="ścieżka dostępu do pliku" width="x" height="y" /&gt;<br/>
+*.wav - plik dźwiękowy typu "wav"
+*.mid - plik dźwiękowy typu "midi"
+*.avi - plik typu "avi"
+*.ra - plik Real Audio Player
+*.mp3 - plik dźwiękowy typu "mp3" (MPEG Layer-3)
+*.mpeg - plik typu "mpeg"
+*.mov - plik typu "mov"
+*.asf - plik typu "asf"<br/><br/>
+
+&lt;embed src="ścieżka dostępu do pliku" autostart="typ" /&gt;
+true" - plik zostanie automatycznie odtworzony, zaraz po wczytaniu strony
+"false" - plik nie zostanie odtworzony po wczytaniu (trzeba go uruchomić "ręcznie" - poprzez wyświetlony panel kontrolny)<br/><br/>
+
+
+&lt;embed src="ścieżka dostępu do pliku" hidden="typ" /&gt;<br/>
+gdzie jako "typ" należy podać:
+"true" - obraz zostanie ukryty
+"false" - obraz będzie wyświetlony na ekranie.<br/><br/>
+
+&lt;embed src="ścieżka dostępu do pliku" showcontrols="typ" /&gt;<br/>
+gdzie jako "typ" należy podać:
+"0" - panel zostanie ukryty
+"1" - panel będzie wyświetlony na ekranie<br/><br/>
+Ukrycie paska wyświetlania informacji:<br/>
+&lt;embed src="ścieżka dostępu do pliku" showdisplay="typ" /&gt;<br/>
+gdzie jako "typ" należy podać:
+"0" - pasek zostanie ukryty
+"1" - pasek będzie wyświetlony na ekranie<br/><br/>
+Powtarzanie:<br/>
+&lt;embed src="ścieżka dostępu do pliku" loop="typ" /&gt;<br/>
+gdzie jako "typ" należy podać:
+"true" - powtarzanie w nieskończoność
+lub "false" - brak powtarzania<br/><br/>
+Poziom głośności (w przypadku plików dźwiękowych):<br/>
+&lt;embed src="ścieżka dostępu do pliku" volume="v" /&gt;<br/>
+gdzie "v" oznacza poziom głośności (od "-10000" do "0").<br/><br/>
+Balans głośników (w przypadku stereofonicznego pliku dźwiękowego):<br/>
+&lt;embed src="ścieżka dostępu do pliku" balance="b" /&gt;<br/>
+gdzie "b" oznacza balans między głośnikami (od "-10000" do "+10000").<br/><br/>
+Adres do pobrania wtyczki (ang. plug-in):<br/>
+&lt;embed src="ścieżka dostępu do pliku" pluginspage="adres wtyczki" /><br/><br/>
+
+
+&lt;noembed&gt;
+W przypadku gdy przegładarka nie obsługuje plików multimedialnych wyświetli ten komunikat
+ale &lt;a href="ścieżka dostępu do pliku"&gt;tutaj&lt;/a&gt;
+możesz zobaczyć ten plik!
+&lt;/noembed&gt;<br/><br/>
+
+&lt;a href="dokument.pdf"&gt;Osadzony plik *.pdf&lt;/a&gt;
+
+<h2>Animacje marquee</h2>
+
+&lt;marquee&gt;Tu wpisz tekst&lt;/marquee&gt;<br/>
+
+&lt;marquee behavior="typ"&gt;Tu wpisz tekst&lt;/marquee&gt;<br/>
+"scroll" - tekst przesuwa się od prawej do lewej (domyślnie)
+"alternate" - tekst przesuwa się od prawej do lewej, a następnie "odbija się" i powraca
+"slide" - tekst przesunie się od prawej do lewej tylko raz, a później się zatrzyma i pozostanie nieruchomy<br/><br/>
+
+&lt;marquee direction="kierunek"&gt;Tu wpisz tekst&lt;/marquee&gt;<br/>
+"left" - tekst będzie przesuwał się w lewo (domyślnie)
+"right" - tekst będzie przesuwał się w prawo
+"up" - przesuwanie w górę (nie obsługuje MSIE 3.01 ani Netscape 7)
+"down" - przesuwanie w dół (nie obsługuje MSIE 3.01 ani Netscape 7)<br/><br/>
+
+&lt;marquee bgcolor="kolor"&gt;Tu wpisz tekst&lt;/marquee&gt;<br/>
+
+&lt;marquee width="x" height="y"&gt;Tu wpisz tekst&lt;/marquee&gt;<br/>
+
+&lt;marquee width="x%" height="y%"&gt;Tu wpisz tekst&lt;/marquee&gt;<br/>
+gdzie "x" oznacza szerokość w pikselach, a "y" wysokość (również w pikselach).
+Natomiast "x%" oznacza szerokość w procentach ekranu, a "y" wysokość (również w procentach)<br/><br/>
+
+&lt;marquee hspace="x" vspace="y"&gt;Tu wpisz tekst&lt;/marquee&gt;<br/>
+gdzie "x" oznacza poziomą odległość w pikselach, a "y" pionową odległość (również w pikselach).<br/><br/>
+
+&lt;marquee loop="n"&gt;Tu wpisz tekst&lt;/marquee&gt;<br/>
+gdzie "n" oznacza ilość powtórzeń.<br/><br/>
+
+O określonej szybkości przesuwania się tekstu: <br/>
+&lt;marquee scrollamount="n"&gt;Tu wpisz tekst&lt;/marquee&gt;<br/>
+
+&lt;marquee scrolldelay="ms"&gt;Tu wpisz tekst&lt;/marquee&gt;<br/>
+
+&lt;marquee truespeeed="truespeeed" scrolldelay="ms"&gt;Tu wpisz tekst&lt;/marquee&gt;<br/>
+gdzie jako "n" należy podać szybkość przesuwania w pikselach.
+Natomiast jako "ms" należy podać szybkość przesuwania w milisekundach (1 milisekunda = 0.001 sekundy, 1000 milisekund = 1 sekunda).<br/><br/>
+
+
+
+
+</body>
+</html>

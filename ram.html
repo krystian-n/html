@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+    <title>VADEMECUM HTML</title>
+</head>
+<body>
+<h2><center><a href="index.html">Vademecum HTML</a></h2></center>
+
+
+
+<center><table border="3" width="700">
+    <tr><td width="350"><a href="dok.html">Dokument i Head</a></td>      <td><a href="bod.html">Body i odsyłacze</a></td>  </tr>
+    <tr><td width="350"><a href="txt.html">Tekst i Formatowanie</a></td> <td><a href="mul.html">Multimedia</a></td>  </tr>
+    <tr><td width="350"><a href="tab.html">Tabele</a></td>               <td><a href="ram.html">Ramki</a></td></tr>
+    <tr><td width="350"><a href="for.html">Formularze</a></td>           <td><a href="spe.html">Znaki specjalne i kolory</a></td>  </tr>
+</table></center><br/><br/>
+
+
+&lt;frameset&gt; ...&lt;/frameset&gt;<br>
+Należy znacznik ten napisać bezpośrednio pod head<br>
+
+<h3>Podział strony na:</h3>
+
+<b>Kolumny:</b><br>
+&lt;frameset cols="x1,x2,..."&gt;...&lt;/frameset&gt;<br>
+Gdzie x1, x2 oznaczają wielkość kolejnych kolumn od lewej zaczynając,<br>
+można podać w px lub %. Uzywając gwiazdki dopełniamy do całości wielkości okna przegładarki np,:<br>
+&lt;frameset cols="20, 100, *" Lub &lt; frameset cols="20,1*,2*" zachowanie proporcji.<br><br>
+
+
+
+
+
+
+<B>Wiersze:</B><br>
+&lt;frameset rows="200,100" <br>
+Odpowiednio px lub<br><br>
+
+
+<b>Obramowanie:</b><br>
+&lt;frameset bordercolor="kolor"&gt;...&lt;/frameset&gt;<br><br>
+
+
+&lt;frameset border="x"&gt;...&lt;/frameset&gt;<br>
+Szerokość ramki<br><br>
+
+&lt;frameset frameborder="typ"&gt;...&lt;/frameset&gt;<br>
+"0" (lub "no") - schowanie obramowania
+"1" (lub "yes") - pokazanie obramowania (domyślnie)<br><br>
+
+
+<h3>Znacznik Frame:</h3>
+
+&lt;frameset&gt;<br>
+&lt;frame src="ścieżka  strony która ma zostać wczytana do ramki" name="nazwa ramki" /&gt;<br>
+&lt;/frameset&gt;<br><br>
+
+
+&lt;frame bordercolor="kolor" /&gt;<br>
+Kolor poszczególnej ramki<br><br>
+
+
+<b>Przewijanie zawartości ramki</b>
+&lt;frame scrolling="typ" /&gt;<br>
+"yes" - umożliwia przewijanie zawartości ramki<br>
+"no" - ramka nie będzie przewijana<br>
+"auto" - ramka będzie przewijana  gdy jej zawartość nie zmieści się w całości na ekranie<br><br>
+
+
+
+
+<b>zabezpieczenie przed zmiana rozmiarów</b><br>
+&lt;frame noresize="noresize" /&gt;<br><br>
+
+<b>Dodatkowe marginesy</b><br>
+&lt;frame marginwidth="x" marginheight="y" /&gt;<br><br>
+
+
+&lt;frame frameborder="typ"&gt;<br>
+"0" (lub "no") - schowanie obramowania
+"1" (lub "yes") - pokazanie obramowania (domyślnie)
+
+
+
+<h3>Znacznik &lt;noframes&gt;</h3>
+
+
+
+&lt;frameset&gt;<br>
+(...)<br>
+&lt;noframes&gt;<br>
+&lt;body&gt;<br>
+Treść alternatywna<br>
+&lt;/body&gt;<br>
+&lt;/noframes&gt;<br>
+&lt;/frameset&gt;
+<br>
+
+
+<h3>Wczytanie strony do ramki:</h3>
+
+&lt;a target="cel" href=" ścieżka dostępu do strony"&gt;Opis&lt;/a&gt;<br>
+cel to nazwa ramki do ktorej chcemy załadować treść zdeklarowana wczesniej w &lt;frame&gt;<br><br>
+ W przypadku umieszczenie w target nazwy która nie istnieje zostanie otwarte nwe okno:<br>
+"_self" - strona zostanie załadowana do bieżącej ramki, czyli do tej na której został wpisany powyższy odsyłacz (domyślnie - można pominąć ten atrybut, a efekt będzie ten sam)<br>
+"_top" - strona zostanie wstawiona w miejsce dokumentu pierwszego w hierarchii (strony głównej)<br>
+"_parent" - strona zostanie wstawiona w miejsce dokumentu nadrzędnego w hierarchii, czyli w miejsce strony startowej struktury ramek, w której znajduje się dany odsyłacz (w przypadku większej ilości zagnieżdżonych stron startowych)<br>
+"_blank" - strona zostanie załadowana w nowym oknie (uruchomi nową kopię przeglądarki)<br>
+
+
+
+<h3>Zagnieżdżanie ramek:</h3>
+
+
+<b>Przykład:</b><br>
+
+&lt;frameset cols="r1,r2,*"&gt;<br>
+&lt;frame name="nazwa1" src="adres  1" /&gt;<br>
+&lt;frameset rows="y1%*"&gt;<br>
+&lt;frame name="nazwa2" src="adres 2" /&gt;<br>
+(...)<br>
+&lt;frame name="nazwa 3" src="adres 3" /&gt;<br>
+&lt;/frameset&gt;<br>
+(...)<br>
+&lt;frame name="nazwa4" src="adres 4" /&gt;<br>
+&lt;/frameset&gt;<br><br>
+
+
+
+<h3>Ramki lokalne, iframe</h3>
+
+&lt;iframe src="ścieżka  do strony"&gt;Wyświetlony tekst w przypadku nie oblugiwanie ramek&lt;/iframe&gt;<br><br>
+
+<b>Atrybuty jakie przyjmuje iframe:</b><br><br>
+
+&lt;iframe src="ścieżka dostępu" width="x" height="y"&gt;...&lt;/iframe&gt;<br>
+
+&lt;iframe src="ścieżka dostępu" name="Tu wpisz nazwę ramki"&gt;...&lt;/iframe&gt;<br>
+
+
+&lt;iframe src="ścieżka dostępu" frameborder="0"&gt;...&lt;/iframe&gt;<br>
+
+
+&lt;iframe src="ścieżka dostępu" scrolling="no"&gt;...&lt;/iframe&gt;<br>
+
+&lt;iframe src="ścieżka dostępu" marginwidth="x" marginheight="y"&gt;...&lt;/iframe&gt;<br>
+
+&lt;iframe src="ścieżka dostępu" hspace="x" vspace="y"&gt;...&lt;/iframe&gt;<br>
+Odległość ramki od sąsadujących elementów<br>
+
+&lt;iframe src="ścieżka dostępu" align="rodzaj"&gt;...&lt;/iframe&gt;<br>
+"left" - ramka ustawiona po lewej stronie, względem otaczającego tekstu
+"right" - ramka ustawiona po prawej stronie względem tekstu
+"top" - tekst ustawiony na górze ramki
+"middle" - tekst ustawiony na średniej wysokości względem ramki
+"bottom" - tekst ustawiony na dole ramki (domyślnie
+
+</body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+    <title>VADEMECUM HTML</title>
+</head>
+<body>
+<h2><center><a href="index.html">Vademecum HTML</a></h2></center>
+
+
+
+<center><table border="3" width="700">
+    <tr><td width="350"><a href="dok.html">Dokument i Head</a></td>      <td><a href="bod.html">Body i odsyłacze</a></td>  </tr>
+    <tr><td width="350"><a href="txt.html">Tekst i Formatowanie</a></td> <td><a href="mul.html">Multimedia</a></td>  </tr>
+    <tr><td width="350"><a href="tab.html">Tabele</a></td>               <td><a href="ram.html">Ramki</a></td></tr>
+    <tr><td width="350"><a href="for.html">Formularze</a></td>           <td><a href="spe.html">Znaki specjalne i kolory</a></td>  </tr>
+</table></center><br><br>
+
+&lt;form action="mailto:adres e-mail?subject=temat" method="post"&gt;
+(tutaj umieszczas wybrane przez Ciebie formularze, można też bez ?subject=temat )<br>
+&lt;/form&gt;<br>
+
+atrybut tabindex mozna stosować dla :A, AREA, BUTTON, TEXTAREA, SELECT, INPUT oraz OBJECT.<br>
+Atrybut accesskey="..." stosujemy z znacznikami: A, AREA, BUTTON, LABEL, LEGEND, TEXTAREA oraz INPUT.
+
+<h3>Typu pól formularzy</h3>
+<table border="3">
+<tr>
+ <td width="400">
+     &lt;input type="text" name="nazwa" /&gt;<br>
+     jak nazwę wpisujemy nazwe pola które zostanie wyświetlone po wysłaniu<br>
+     dodatkowe atrybuty:
+     value="odpowiedź domyślna"<br>
+     size="k"<br>
+     maxlength="10"<br>
+     readonly="readonly"<br>
+     disabled="disabled"<br>
+     tabindex="n" - kolejne wartości podczas przechodzenia przy uzyciu tabulatora
+ </td>
+<td width="400">
+    <form >
+        <input type="text" name="nazwa" size="10" maxlength="5" />
+    </form>
+</td>
+
+</tr>
+</table><br><br>
+
+
+<table border="3">
+    <tr>
+        <td width="400">
+            &lt;input type="password" name="nazwa" /&gt;
+        </td>
+        <td width="400">
+<font>
+ <input type="password" name="haslo">
+</font>
+        </td>
+
+    </tr>
+</table><br><br>
+
+
+
+<table border="3">
+    <tr>
+        <td width="400">
+            &lt;input type="checkbox" name="nazwa" value="wartość" /&gt;Tu wisujemy opis danego pola<br>
+        dodatkowo stosujemy atrybut value"zawartosc"- gdzie zawartośc to treśc odpowiedzi wysłane z formularzem<br>
+        jesli bedzie odwoływał sie do tej wartości skrypt trzeba nadać jeszcze id=""<br>
+         checked="checked" atrybut ten powoduje domyślne zaznaczenia<br>
+            disabled="disabled" atrybut ten powoduje zablokowanie pola<br>
+
+            &lt;label&gt;&lt;input type="checkbox" name="nazwa" value="wartość" /&gt;
+                To jest etykieta pola obok&lt;/label&gt; -- etykieta kojarzy cały napis w poluz tym polem<br>
+            accesskey="klawisz" po wcisnieciu alt+ dany klawisz zaznaczymy dane pole
+        <td width="400">
+        <label><input type="checkbox" name="nazwa" value="wartość" />Tu wpisz opis pola</label>
+        </td>
+
+    </tr>
+</table><br><br>
+
+<table border="3">
+    <tr>
+        <td width="400">
+            Pole opcji<br>
+            &lt;input type="radio" name="nazwa" value="wartość" &gt;opis pola<br>
+            checked="checked" atrybut ten powoduje domyśle zaznaczenie pola<br>
+            disabled="disabled" powoduje zablokowanie pola
+        </td>
+        <td width="400">
+<form>
+<input type="radio" name="nazwa" value="tak" checked="checked">pole nr 1
+<input type="radio" name="nazwa1" value="tak">pole 2
+</form>
+        </td>
+
+    </tr>
+</table><br><br>
+
+
+
+<table border="3">
+    <tr>
+        <td width="400">
+Lista rozwijana<br>
+            &lt;form action="..."&gt;<br>
+            &lt;select name="nazwa"&gt;<br>
+            &lt;option&gt;Tu wpisz pierwszą możliwość&lt;/option&gt;<br>
+            &lt;option&gt;Tu wpisz drugą możliwość&lt;/option&gt;<br>
+            (...)<br>
+            &lt;/select&gt;<br>
+            &lt;/form&gt;<br><br>
+            selected="selected" bo wstawieniu tego atrybutu do danego option bedzie jako wartość domyślna<br>
+            size="w" określenie wysokości pola<br>
+            disabled="disabled" atrybut ten blokuje pole<br>
+        </td>
+        <td width="400">
+            <form.. >
+                <select name="nazwa" size="1">
+                    <option>Tu pierwsza możliwość</option>
+                    <option>Tu druga możliwość</option>
+                    (...)
+                </select>
+            </form..>
+        </td>
+
+    </tr>
+</table><br><br>
+
+
+
+<table border="3">
+    <tr>
+        <td width="400">
+Grupy opcji<br>
+            &lt;select name="nazwa"&gt;<br>
+            &lt;optgroup label="nazwa grupy"&gt;<br>
+            &lt;option&gt;Tu wpisz pierwszą możliwość&lt;/option&gt;<br>
+            &lt;option&gt;Tu wpisz drugą możliwość&lt;/option&gt;<br>
+            &lt;/optgroup&gt;<br>
+            &lt;optgroup label="nazwa2"&gt;<br>
+            &lt;option>Tu 3</option&gt;<br>
+            &lt;option>Tu 4...</option>&gt;<br>
+            &lt;/optgroup&gt;<br>
+
+            &lt;/select&gt;<br>
+        </td>
+        <td width="400">
+            <select name="nazwa">
+                <optgroup label="nazwa grupy">
+                    <option>Tu  pierwsza możliwość</option>
+                    <option>Tu  druga możliwość</option>
+                </optgroup>
+            <optgroup label="nazwa2">
+                <option>Tu 3</option>
+            <option>Tu 4...</option>
+            </optgroup>
+             </select>
+        </td>
+
+    </tr>
+</table><br><br>
+
+
+
+
+
+<table border="3">
+    <tr>
+        <td width="400">
+Test area<br>
+            &lt;form action="..."&gt;<br>
+            &lt;textarea name="nazwa" cols="x" rows="y"&gt;Tu wpisz tekst który pojawi się domyślnie&lt;/textarea&gt;<br>
+            &lt;/form&gt;<br>
+  x i y oznaczaja ilosc wierszy i kolumny tekstu który może sie zmieścic bez przewijania<br>
+            readonly="readonly"  atrybut tylko do odczaytu<br>
+            disabled="disabled" - zablokowanie pole textowe<br>
+            wrap="rodzaj"<br>
+            "off" - wyłączenie zawijania tekstu
+            "physical" - zawijanie tekstu na stronie i przesyłanie w formularzu tekstu zawiniętego
+            "virtual" - zawijanie tekstu na stronie, ale przesyłanie w formularzu tekstu w "długich linijkach"
+            (tak jak został wpisany)
+        </td>
+        <td width="400">
+            <form action="...">
+                <textarea name="nazwa" cols="10" rows="y100">Tu wpisz tekst który pojawi się domyślnie</textarea>
+            </form>
+        </td>
+
+    </tr>
+</table><br><br>
+
+
+
+<table border="3">
+    <tr>
+        <td width="400">
+Selektor Pliku<br>
+            &lt;form action="..." enctype="multipart/form-data"&gt;<br>
+            &lt;input type="file" name="nazwa" /&gt;<br>
+            &lt;/form&gt;<br><br>
+
+        </td>
+        <td width="400">
+            <form action="..." enctype="multipart/form-data">
+                <input type="file" name="nazwa" />
+            </form>
+        </td>
+
+    </tr>
+</table><br><br>
+
+
+
+<table border="3">
+    <tr>
+        <td width="400">
+Wysyłanie formularza<br>
+  &lt;form action="..."&gt;<br>
+            &lt;input type="submit" value="wartość" /&gt;<br>
+            &lt;/form&gt;<br>
+        wartość to treść przy przyciusku<br.<br><br>
+            &lt;form action="..."&gt;
+            &lt;input type="image" src="ścieżka dostępu do obrazka" alt="informacja alternatywna" /&gt;
+            &lt;/form&gt;
+
+        </td>
+        <td width="400">
+            <form action="...">
+                <input type="submit" value="wyslij formularz" />
+            </form>
+        </td>
+
+    </tr>
+</table><br><br>
+
+
+
+<table border="3">
+    <tr>
+        <td width="400">
+            &lt;form action="..."&gt;<br>
+            &lt;input type="reset" value="wartość" /&gt;<br>
+            &lt;/form&gt;<br>
+
+        </td>
+        <td width="400">
+            <form action="...">
+                <input type="reset" value="wyczyść zaznaczone pola" />
+            </form>
+        </td>
+
+    </tr>
+</table><br><br>
+
+
+
+
+<table border="3">
+    <tr>
+        <td width="400">
+Grupowanie pól:<br>
+            &lt;fieldset&gt;<br>
+            (Pola formularza)<br>
+            &lt;/fieldset&gt;<br><br>
+
+
+            &lt;fieldset&gt;<br>
+            &lt;legend align="rodzaj"&gt;wpisujemy tytuł&lt;/legend&gt;<br>
+            (Pola formularza)<br>
+            &lt;/fieldset&gt;
+            <br>
+
+        </td>
+        <td width="400">
+<form>
+    <fieldset>
+    <legend align="center ">pola do wyboru</legend>
+    <input type="radio" name="nazwa" value="1" >opis pola1
+    <input type="radio" name="nazwa2" value="2" >opis pola2
+    </fieldset>
+
+</form>
+        </td>
+
+    </tr>
+</table><br><br>
+
+
+
+
+</body>
+</html>
+
+
