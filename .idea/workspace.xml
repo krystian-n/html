@@ -38,19 +38,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tab.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="tab.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tab.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="24" selection-start="1144" selection-end="1144" vertical-scroll-proportion="-0.7768014">
+            <state line="28" column="24" selection-start="1144" selection-end="1144" vertical-scroll-proportion="-0.65384614">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ram.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ram.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ram.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0">
+            <state line="44" column="33" selection-start="1602" selection-end="1602" vertical-scroll-proportion="0.68717045">
               <folding />
             </state>
           </provider>
@@ -113,7 +113,6 @@
       <list>
         <option value="$PROJECT_DIR$/START.html" />
         <option value="$PROJECT_DIR$/spe.html" />
-        <option value="$PROJECT_DIR$/ram.html" />
         <option value="$PROJECT_DIR$/mul.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/dok.html" />
@@ -121,6 +120,7 @@
         <option value="$PROJECT_DIR$/for.html" />
         <option value="$PROJECT_DIR$/bod.html" />
         <option value="$PROJECT_DIR$/tab.html" />
+        <option value="$PROJECT_DIR$/ram.html" />
       </list>
     </option>
   </component>
@@ -165,23 +165,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HTM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HTM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/spe.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="RunManager">
@@ -327,13 +317,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ram.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spe.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="6" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0">
@@ -385,7 +368,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tab.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="24" selection-start="1144" selection-end="1144" vertical-scroll-proportion="-0.7768014">
+        <state line="28" column="24" selection-start="1144" selection-end="1144" vertical-scroll-proportion="-0.65384614">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ram.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="33" selection-start="1602" selection-end="1602" vertical-scroll-proportion="0.68717045">
           <folding />
         </state>
       </provider>
